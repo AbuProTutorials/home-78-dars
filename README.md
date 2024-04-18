@@ -1,1 +1,1 @@
-# home-78-dars
+# uy ishi tayyor
