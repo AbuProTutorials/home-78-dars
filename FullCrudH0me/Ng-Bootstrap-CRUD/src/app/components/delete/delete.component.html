@@ -1,0 +1,24 @@
+<button routerLink="" type="button" class="btc btn-close" aria-label="Close"></button>
+
+
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<div class="mb-3">
+				<label for="dateOfBirth">Id</label>
+				<div class="input-group">
+					<input name="hello" [(ngModel)]="id" type="text" />
+				</div>
+			</div>
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="start();modal.close('Save click')">Delete</button>
+	</div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-danger" (click)="open(content)">Delete</button>

@@ -1,0 +1,23 @@
+<div class="header">
+    <h1>CRUD in <span class="boot">Material UI</span></h1>
+
+</div>
+<div class="CRUD">
+
+    <button class="butnchalar" routerLink="getall" mat-flat-button color="primary">GetALl</button>
+
+
+    <!--^^^^^^^^^^^^^^^^^ -> getall componentiga otayotganda refresh bolmasligi uchun.
+                             [routerLink] to'g'ri ishlashi uchun app.module.tsda
+                             RouterModule import qilinishi kerak-->
+
+    <button class="butnchalar bt" href="" routerLink="create" mat-flat-button color="accent">Create</button>
+    <button routerLink="update" class="butnchalar" mat-fab extended color="accent">
+        <mat-icon>favorite</mat-icon>
+        Update
+    </button>
+    <button routerLink="delete" class="butnchalar" mat-fab extended color="warn">
+        <mat-icon>favorite</mat-icon>
+        Delete
+    </button>
+</div>

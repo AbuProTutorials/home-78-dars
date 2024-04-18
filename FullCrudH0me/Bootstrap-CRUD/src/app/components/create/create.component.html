@@ -1,0 +1,48 @@
+<button routerLink="" type="button" class="btc btn-close" aria-label="Close"></button>
+
+<div class="inputs">
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">name</span>
+        <input [(ngModel)]="createDto.carName" type="text" class="form-control" placeholder="name"
+            aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">brand</span>
+        <input [(ngModel)]="createDto.brandName" type="text" class="form-control" placeholder="brand"
+            aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">price</span>
+        <input [(ngModel)]="createDto.price" type="text" class="form-control" placeholder="price"
+            aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <div class="input-group flex-nowrap">
+        <span class="input-group-text" id="addon-wrapping">rating</span>
+        <input [(ngModel)]="createDto.rating" type="text" class="form-control" placeholder="rating"
+            aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+    <!-- Button trigger modal -->
+    <button (click)="start()" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Create
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Muvaffaqiyatli CREATE boldi
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

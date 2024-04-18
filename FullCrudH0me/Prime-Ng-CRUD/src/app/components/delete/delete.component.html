@@ -1,0 +1,13 @@
+<button routerLink="" type="button" class="btc btn-close" aria-label="Close"></button>
+
+
+
+<p-button (click)="showDialog()" icon="pi pi-external-link" label="Delete"></p-button>
+<p-dialog header="Header" [(visible)]="visible" [style]="{width: '20vw'}">
+  <h4 id="element">Id Mavjud Emas!</h4>
+  <label class="in" for="">Id for car </label>
+  <input (input)="consolecha()" class="in" pInputText type="text" class=" in p-inputtext-sm" placeholder="Id" [(ngModel)]="id" />
+  
+<button routerLink="update" (click)="start()" routerLink="getall" pButton pRipple label="Delete" class="bt p-button-danger"></button>
+
+</p-dialog>

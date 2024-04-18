@@ -1,0 +1,33 @@
+<button
+  routerLink=""
+	type="button"
+	class="btn btn-outline-secondary"
+	ngbPopover="Hayr Salomat boling"
+	triggers="mouseenter:mouseleave"
+	popoverTitle="Get back"
+>
+	Get Back!
+</button>
+
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Brand</th>
+        <th scope="col">Price</th>
+        <th scope="col">Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      @for (car of cars; track car.id;) {
+        <tr>
+          <td>{{car.id}}</td>
+          <td>{{car.carName}}</td>
+          <td>{{car.brandName}}</td>
+          <td>{{car.price}}</td>
+          <td>{{car.rating}}</td>
+        </tr>
+      }
+    </tbody>
+  </table>

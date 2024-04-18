@@ -1,0 +1,31 @@
+<button routerLink="" type="button" class="btc btn-close" aria-label="Close"></button>
+
+<ng-template #content let-modal>
+	<div class="modal-header">
+		<h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+		<button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+	</div>
+	<div class="modal-body">
+		<form>
+			<input [(ngModel)]="createDto.carName" type="text" placeholder="Name" name="1">
+		</form>
+		<form>
+			<input [(ngModel)]="createDto.brandName" type="text" placeholder="Brand" name="1">
+		</form>
+		<form>
+			<input [(ngModel)]="createDto.price" type="text" placeholder="Price" name="1">
+		</form>
+		<form>
+			<input [(ngModel)]="createDto.rating" type="text" placeholder="Rating" name="1">
+		</form>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-outline-dark" (click)="start();modal.close('Save click'); ">Create</button>
+	</div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" (click)="open(content)">Create qilish</button>
+
+<hr />
+
+<pre>{{ closeResult }}</pre>

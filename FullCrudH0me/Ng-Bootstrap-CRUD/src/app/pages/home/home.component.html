@@ -1,0 +1,26 @@
+<div class="header">
+    <h2>CRUD in <span class="boot">NG-Bootstrap</span></h2>
+
+</div>
+<div class="CRUD">
+
+    <button routerLink="getall" type="button" class="btn btn-outline-primary me-2" placement="top" ngbTooltip="Korish">
+        Get-All
+    </button>
+    <!--^^^^^^^^^^^^^^^^^ -> getall componentiga otayotganda refresh bolmasligi uchun.
+                             [routerLink] to'g'ri ishlashi uchun app.module.tsda
+                             RouterModule import qilinishi kerak-->
+
+    <button type="button" routerLink="create" class="btn btn-outline-success me-2" placement="top" ngbTooltip="Yangi yasash">
+        Create
+    </button>
+
+    <button type="button" routerLink="update" class="btn btn-outline-warning me-2" placement="top" ngbTooltip="Ozgartirish">
+        Update
+    </button>
+
+    <button type="button" routerLink="delete" class="btn btn-outline-danger me-2" placement="top" ngbTooltip="Ochirish">
+        Delete
+    </button>
+
+</div>

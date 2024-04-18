@@ -1,0 +1,25 @@
+<button routerLink="" type="button" class="btc btn-close" aria-label="Close"></button>
+
+
+
+<div class="card flex justify-content-center">
+    <label for="">Name</label>
+    <p-inputOtp [(ngModel)]="createDto.carName"></p-inputOtp>
+</div>
+<div class="card flex justify-content-center">
+    <label for="">Brand</label>
+
+    <p-inputOtp [(ngModel)]="createDto.brandName"></p-inputOtp>
+</div>
+<div class="card flex justify-content-center">
+    <label for="">Price</label>
+
+    <p-inputOtp [(ngModel)]="createDto.price"></p-inputOtp>
+</div>
+<div class="card flex justify-content-center">
+    <label for="">Rating</label>
+
+    <p-inputOtp [(ngModel)]="createDto.rating"></p-inputOtp>
+</div>
+
+<button (click)="start()" pButton pRipple label="Create" class="p-button-success"></button>
